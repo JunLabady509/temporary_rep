@@ -2,6 +2,7 @@
 #include <time.h>
 #include <math.h>
 #include "particle.h"
+#include "SDL2/SDL.h"
 
 // dimensions de la fenêtre
 #define WINDOW_DIM 480

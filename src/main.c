@@ -191,8 +191,10 @@ int main(int argc, char *argv[])
         // Affiche le rendu
         SDL_RenderPresent(renderer);
 
-        // Couleur rouge pour la particule de la souris
-        SDL_SetRenderDrawColor(renderer, 255, 10, 0, 255);
+        // Un cercle de couleur rouge pour la particule de la souris
+        SDL_RenderFillCircle(renderer, mouse_x, mouse_y, 10);
+    
+        // SDL_SetRenderDrawColor(renderer, 255, 10, 0, 255);
         // and a little bigger
 
         // Dessine la particule de la souris
